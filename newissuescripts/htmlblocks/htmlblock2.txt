@@ -1,0 +1,44 @@
+
+</div>
+<button class="nav-btn" style="float:right; right:0;" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+ 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+document.onkeydown = function (e) {
+    switch (e.keyCode) {
+        case 37:
+            plusDivs(-1);
+            str = 'Left Key pressed!';
+            break;
+        case 38:
+            str = 'Up Key pressed!';
+            break;
+        case 39:
+            plusDivs(1);
+            str = 'Right Key pressed!';
+            break;
+        case 40:
+            str = 'Down Key pressed!';
+            break;
+    }
+};
+</script>

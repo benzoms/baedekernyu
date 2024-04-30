@@ -1,0 +1,28 @@
+<style>
+    .mySlides {display:none;}
+    .magazine-viewer{
+        width: 100%;
+        z-index: 1;
+    }
+    #allmag{
+        display:grid;
+        grid-auto-flow: column;
+    }
+    .nav-btn{
+        color: #6c81a3;
+        background-color: rgba(193,218,227, 0.2);
+        border-style: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .nav-btn:hover {
+        transition: 0.3s;
+        background-color: rgba(193,218,227, 1);
+        border-style: none;
+    }
+    
+    .nav-btn-right {
+        float:right;
+    }
+</style>
+
