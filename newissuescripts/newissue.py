@@ -1,12 +1,12 @@
 
-sem_loc = 'nyc_f23'
+sem_loc = 'nyc_f19'
 
-pagecount = 25
+pagecount = 21
 #format: Fall '23 NYC
-title = "Fall '23 NYC"
+title = "Fall '19 NYC"
+#<h3 class="magtitle" style="text-align:center;">{title}</h3>
 
-titleblock = f"""\n<h3 class="magtitle" style="text-align:center;">{title}</h3>
-<div id="allmag">
+titleblock = f"""\n<div id="allmag">
 <button class="nav-btn" style="float:left;" onclick="plusDivs(-1)">&#10094;</button>
 <div class="magazine-viewer">\n"""
 
