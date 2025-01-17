@@ -1,0 +1,105 @@
+<style>
+    .mySlides {display:none;}
+    .magazine-viewer{
+        width: 100%;
+        z-index: 1;
+    }
+    #allmag{
+        display:grid;
+        grid-auto-flow: column;
+    }
+    .nav-btn{
+        color: #6c81a3;
+        background-color: rgba(193,218,227, 0.2);
+        border-style: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .nav-btn:hover {
+        transition: 0.3s;
+        background-color: rgba(193,218,227, 1);
+        border-style: none;
+    }
+    
+    .nav-btn-right {
+        float:right;
+    }
+</style>
+
+
+<div id="allmag">
+<button class="nav-btn" style="float:left;" onclick="plusDivs(-1)">&#10094;</button>
+<div class="magazine-viewer">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/1.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/2.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/3.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/4.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/5.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/6.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/7.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/8.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/9.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/10.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/11.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/12.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/13.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/14.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/15.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/16.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/17.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/18.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/19.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/20.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/21.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/22.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/23.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/24.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/25.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/26.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/27.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/28.png" style="width:100%">
+<img class="mySlides" src="https://raw.githubusercontent.com/benzoms/baedekernyu/main/magsrcimgs/nyc_f24/29.png" style="width:100%">
+
+</div>
+<button class="nav-btn" style="float:right; right:0;" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+ 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+document.onkeydown = function (e) {
+    switch (e.keyCode) {
+        case 37:
+            plusDivs(-1);
+            str = 'Left Key pressed!';
+            break;
+        case 38:
+            str = 'Up Key pressed!';
+            break;
+        case 39:
+            plusDivs(1);
+            str = 'Right Key pressed!';
+            break;
+        case 40:
+            str = 'Down Key pressed!';
+            break;
+    }
+};
+</script>
