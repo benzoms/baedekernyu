@@ -1,9 +1,9 @@
 
-sem_loc = 'nyc_f24'
+sem_loc = 'lon_f24'
 
-pagecount = 29
+pagecount = 25
 #format: Fall '23 NYC
-title = "Fall '24 NYC"
+title = "Fall '24 London"
 #<h3 class="magtitle" style="text-align:center;">{title}</h3>
 
 titleblock = f"""\n<div id="allmag">
